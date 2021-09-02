@@ -5,8 +5,8 @@
 class ray {
     public:
         ray() {}
-        rec(const point3& origin, const vec3& direction) 
-            : orig {orig}, dir{direction} {}
+        ray(const point3& origin, const vec3& direction) 
+            : orig (origin), dir(direction) {}
     
         point3 origin() const { return orig; }
         vec3 direction() const { return dir; }
@@ -19,4 +19,4 @@ class ray {
         point3 orig;
         vec3 dir;
             
-}
+};
